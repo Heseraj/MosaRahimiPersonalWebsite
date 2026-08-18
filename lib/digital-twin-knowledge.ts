@@ -61,28 +61,34 @@ IDENTITY AND BOUNDARIES
 
 MOSA RAHIMI — DOCUMENTED PROFILE
 - Current: Coordination Supervisor at Amazon Leo (Project Kuiper), Redmond,
-  Washington, from June 2025. He coordinates production systems supporting a
+  Washington, since December 2025, promoted from Production Supervisor (a role
+  he held there from May 2025). He coordinates production systems supporting a
   satellite constellation and translates complex aerospace operations into
   dependable human-scale execution.
 - Amazon SSD DC Area Manager II, 2024–2025: led high-volume operations, raised
-  a non-peak inbound record from 350K to 364K units (more than 40% above daily
-  goal), improved outbound consistency, built an hourly Excel performance tool,
-  and developed four process assistants.
-- Founder and CEO of Dastranj, 2019–2025: built supply-chain and operating
-  systems around an ambition to apply AI, machine learning, and computer vision
-  to artisan commerce.
+  a non-peak inbound stow record from 350K to 364K units (more than 40% above
+  daily goal), improved outbound consistency, built an hourly Excel performance
+  tool, and developed four process assistants.
+- IncQuery, Survey Director, Sept 2023–Mar 2024: directed survey research
+  design and administration.
+- Founder of Dastranj, 2019–2025: a self-directed venture in the artisan goods
+  market, run alongside his graduate studies, with an explicit intention to
+  bring AI, machine learning, and computer vision into future work.
 - Harvard Kennedy School, 2021–2022: Belfer Young Leader Fellow and Machine
   Learning Teaching Assistant.
-- Team Afghan Power and Refugee Investment Network, 2019–2021: strategy,
-  micro-grid and internet expansion, and capital access for refugee founders.
+- Team Afghan Power, Development & Outreach MBA Intern, May 2020–Aug 2021:
+  helped shape a five-year micro-grid and internet expansion strategy for
+  Afghanistan. Refugee Investment Network, Summer Intern, May–Jul 2019:
+  supported capital access initiatives for refugee entrepreneurs.
 - CyraCom, 2016–2018: sole in-house Farsi-Dari interpreter at the New York
   center across law, finance, medicine, and emergency response; evaluated more
-  than 100 applicants.
+  than 100 applicants and supervised and mentored five new interpreters.
 - 2015–2016: rebuilt his life in the United States through work as a bank
   teller, translator, warehouse worker, and cashier while pursuing education.
-- DOJ/ICITAP, 2010–2014: coordinated more than 70 capacity-building programs
-  across 34 Afghan provinces, aligned 30+ stakeholders, reduced overlapping
-  projects by 20%, and cut provincial reporting time by more than 40%.
+- DOJ/ICITAP, 2010–2014: served within the central unit that coordinated more
+  than 70 capacity-building programs across 34 Afghan provinces and aligned
+  30+ stakeholders; advised on efforts that reduced overlapping projects by
+  20% and cut provincial reporting time by more than 40%.
 - U.S. Army Central Command, 2008–2010: cultural adviser and interpreter,
   advising senior leaders and teaching leadership, anti-corruption, English,
   and technology.
@@ -92,7 +98,7 @@ MOSA RAHIMI — DOCUMENTED PROFILE
 - Education: Wharton MBA in Finance, Business Analytics, and Management (2022);
   Harvard Kennedy School MPA (2022); American University of Afghanistan BBA in
   Finance (2013); Kabul National Police Academy, Border Police (2003).
-- Languages: Farsi/Hazaragi cultural background, English, and Pashto.
+- Languages: Farsi, English, and Pashto.
 - Technical work: BuildingANN neural-network notebook, FinRiskManagement in R,
   and ongoing public repositories at https://github.com/Heseraj.
 

@@ -16,20 +16,29 @@ export type Artifact = {
 };
 
 export const impact = [
-  { value: "364K", label: "units stowed", note: "A non-peak Amazon record" },
-  { value: "70+", label: "programs coordinated", note: "Across all 34 Afghan provinces" },
+  { value: "364K", label: "units stowed", note: "A non-peak inbound stow record" },
+  { value: "70+", label: "programs coordinated", note: "Within a unit spanning 34 Afghan provinces" },
   { value: "12K", label: "person border force", note: "Scaled from 5,000 personnel" },
   { value: "40%+", label: "faster reporting", note: "Through operational systems design" },
 ];
 
 export const career: CareerEntry[] = [
   {
-    period: "June 2025 — Present",
+    period: "Dec 2025 — Present",
     organization: "Amazon Leo (Project Kuiper)",
     role: "Coordination Supervisor",
     location: "Redmond, Washington",
     summary:
       "Coordinating production for Amazon Leo (Project Kuiper)—building the manufacturing systems behind the satellite constellation and translating complex aerospace operations into dependable human-scale execution.",
+    tone: "current",
+  },
+  {
+    period: "May 2025 — Dec 2025",
+    organization: "Amazon Leo (Project Kuiper)",
+    role: "Production Supervisor",
+    location: "Redmond, Washington",
+    summary:
+      "Supported production operations for the Project Kuiper satellite constellation ahead of a promotion to Coordination Supervisor.",
     tone: "current",
   },
   {
@@ -47,15 +56,22 @@ export const career: CareerEntry[] = [
     tone: "current",
   },
   {
+    period: "Sept 2023 — Mar 2024",
+    organization: "IncQuery",
+    role: "Survey Director",
+    location: "Philadelphia, Pennsylvania",
+    summary: "Directed survey research design and administration.",
+  },
+  {
     period: "2019 — 2025",
     organization: "Dastranj",
-    role: "Founder & CEO",
+    role: "Founder",
     location: "Philadelphia, Pennsylvania",
     summary:
-      "A startup with a long-term thesis: apply AI, machine learning, and computer vision to the artisan goods market—building the supply chain, brand, and operating systems to connect craft producers with global demand.",
+      "A self-directed venture in the artisan goods market, run alongside two graduate degrees—a deliberate learning opportunity in business and technology, with an explicit intention to bring AI, machine learning, and computer vision into future work.",
     highlights: [
-      "Built an end-to-end supply chain from producer relationships through fulfillment.",
-      "Company mission centers on scaling artisan goods through technology—not reinvention, but a deliberate bet on AI in a category that still runs on trust and handwork.",
+      "Operated independently for six years while completing MBA and MPA coursework at Wharton and Harvard.",
+      "Set the intention to apply AI, machine learning, and computer vision to future work—an intention that shaped the pivot that followed.",
     ],
   },
   {
@@ -68,12 +84,19 @@ export const career: CareerEntry[] = [
     tone: "education",
   },
   {
-    period: "2019 — 2021",
-    organization: "Team Afghan Power · Refugee Investment Network",
-    role: "Strategy & Development",
-    location: "Philadelphia · Washington, D.C.",
+    period: "May 2020 — Aug 2021",
+    organization: "Team Afghan Power",
+    role: "Development & Outreach MBA Intern",
+    location: "Philadelphia, Pennsylvania",
     summary:
-      "Helped shape a five-year micro-grid and internet expansion strategy and supported capital access for refugee entrepreneurs.",
+      "Helped shape a five-year micro-grid and internet expansion strategy for Afghanistan.",
+  },
+  {
+    period: "May 2019 — Jul 2019",
+    organization: "Refugee Investment Network",
+    role: "Summer Intern",
+    location: "Washington, D.C.",
+    summary: "Supported capital access initiatives for refugee entrepreneurs.",
   },
   {
     period: "2016 — 2018",
@@ -81,7 +104,7 @@ export const career: CareerEntry[] = [
     role: "Farsi–Dari Interpreter",
     location: "New York City",
     summary:
-      "Served as the center’s sole in-house Farsi–Dari interpreter across law, finance, medicine, and emergency response; evaluated 100+ applicants and eliminated outsourcing costs.",
+      "Served as the center’s sole in-house Farsi–Dari interpreter across law, finance, medicine, and emergency response; evaluated 100+ applicants, eliminated outsourcing costs, and supervised and mentored five new interpreters.",
   },
   {
     period: "2015 — 2016",
@@ -98,9 +121,9 @@ export const career: CareerEntry[] = [
     role: "Adviser & Senior Program Assistant",
     location: "Kabul, Afghanistan",
     summary:
-      "Coordinated more than 70 capacity-building programs across 34 provinces and aligned 30+ government, diplomatic, and civil-society stakeholders.",
+      "Served within the central unit that coordinated more than 70 capacity-building programs across 34 provinces and aligned 30+ government, diplomatic, and civil-society stakeholders.",
     highlights: [
-      "Reduced bureaucracy and overlapping projects by 20%.",
+      "Advised on efforts that reduced bureaucracy and overlapping projects by 20%.",
       "Cut provincial reporting time by more than 40%.",
       "Helped design strategic planning, international relations, and monitoring units.",
     ],
