@@ -12,7 +12,7 @@ const navItems = [
   ["Story", "#story"],
 ];
 
-export function SiteHeader() {
+export function SiteHeader({ twinEnabled = false }: { twinEnabled?: boolean }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -42,8 +42,12 @@ export function SiteHeader() {
             {label}
           </a>
         ))}
-        <a className="nav-cta" href="#digital-twin" onClick={() => setOpen(false)}>
-          Ask my AI twin
+        <a
+          className="nav-cta"
+          href={twinEnabled ? "#digital-twin" : "#contact"}
+          onClick={() => setOpen(false)}
+        >
+          {twinEnabled ? "Ask my AI twin" : "Get in touch"}
         </a>
       </nav>
 
