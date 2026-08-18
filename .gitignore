@@ -1,0 +1,12 @@
+# Environment variables
+.env
+
+# Dependencies and Next.js output
+node_modules/
+.next/
+out/
+
+# Local tooling
+*.log
+.DS_Store
+*.tsbuildinfo
