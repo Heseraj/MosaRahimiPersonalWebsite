@@ -44,15 +44,15 @@ export default function Home() {
             The deliberate pivot · AI &amp; data science
           </p>
           <h1 id="hero-heading">
-            Experience taught me how systems behave.
-            <span>Now I&apos;m learning how machines learn.</span>
+            I build and scale complex operations.
+            <span>From national security institutions to satellite manufacturing.</span>
           </h1>
           <p className="hero-intro">
             I&apos;m Mosa Rahimi—a Wharton MBA, Harvard MPA, and Amazon Leo
             leader.
-            After two decades in operations, policy, and strategy, I&apos;m
-            deliberately building at the intersection of artificial intelligence,
-            finance, and the consequential problems those systems create.
+            After two decades leading operations, policy, and strategy, I work
+            at the intersection of aerospace production systems, operational
+            strategy, and applied AI.
           </p>
           <div className="hero-tags" aria-label="Areas of focus">
             <span>Artificial intelligence</span>
@@ -721,15 +721,17 @@ export default function Home() {
       <section className="contact-section" id="contact" aria-labelledby="contact-heading">
         <div className="contact-grid" aria-hidden="true" />
         <Reveal className="contact-inner">
-          <p className="eyebrow light">For AI teams &amp; technical recruiters</p>
+          <p className="eyebrow light">
+            For aerospace operations and strategic leadership teams
+          </p>
           <h2 id="contact-heading">
             Examine the work.
             <span>Then let&apos;s talk.</span>
           </h2>
           <p>
-            I&apos;m looking for roles and collaborations at the intersection of
-            artificial intelligence, operations, and policy. Start with the
-            artifacts above—or reach out directly if you see a fit.
+            I&apos;m exploring roles at the intersection of aerospace operations,
+            manufacturing leadership, and strategic advisory. Start with the
+            experience above—or reach out directly if you see a fit.
           </p>
           <div className="contact-actions">
             <a

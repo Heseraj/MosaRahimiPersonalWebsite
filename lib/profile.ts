@@ -29,7 +29,12 @@ export const career: CareerEntry[] = [
     role: "Coordination Supervisor",
     location: "Redmond, Washington",
     summary:
-      "Coordinating production for Amazon Leo (Project Kuiper)—building the manufacturing systems behind the satellite constellation and translating complex aerospace operations into dependable human-scale execution.",
+      "Coordinate satellite-manufacturing execution across the OTAC and Decks & Panels value streams, aligning production, quality, engineering, and shift handoffs in a cleanroom aerospace environment.",
+    highlights: [
+      "Built operational tracking tools for labor contribution, MES analytics, and handoff continuity that remain in use across shifts.",
+      "Support production-readiness and NPI builds for satellite-constellation manufacturing.",
+      "Establish a dependable operating cadence that translates complex production requirements into clear, human-scale execution.",
+    ],
     tone: "current",
   },
   {
@@ -38,7 +43,13 @@ export const career: CareerEntry[] = [
     role: "Production Supervisor",
     location: "Redmond, Washington",
     summary:
-      "Supported production operations for the Project Kuiper satellite constellation ahead of a promotion to Coordination Supervisor.",
+      "Led back-half-night production across two facilities, transforming the department's lowest-performing shift into its strongest within five months.",
+    highlights: [
+      "Increased SSL and Zenith throughput by 10–15%, delivering 15–20 additional OTACs per cycle.",
+      "Reached production parity with 20–25% less headcount than peer shifts, saving 30–40 labor hours weekly.",
+      "Sustained the department's highest productivity ratio (0.7+) and onboarded 25+ manufacturing technicians.",
+      "Developed a leadership pipeline that resulted in a lead promotion and a technician-to-lead conversion.",
+    ],
     tone: "current",
   },
   {
@@ -68,11 +79,7 @@ export const career: CareerEntry[] = [
     role: "Founder",
     location: "Philadelphia, Pennsylvania",
     summary:
-      "A self-directed venture in the artisan goods market, run alongside two graduate degrees—a deliberate learning opportunity in business and technology, with an explicit intention to bring AI, machine learning, and computer vision into future work.",
-    highlights: [
-      "Operated independently for six years while completing MBA and MPA coursework at Wharton and Harvard.",
-      "Set the intention to apply AI, machine learning, and computer vision to future work—an intention that shaped the pivot that followed.",
-    ],
+      "Built an end-to-end supply-chain venture connecting craft producers with global demand—an applied exploration of technology, computer vision, and demand forecasting in artisan markets. Paused the venture to focus fully on aerospace manufacturing.",
   },
   {
     period: "2021 — 2022",
