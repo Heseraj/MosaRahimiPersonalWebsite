@@ -4,8 +4,10 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navItems = [
+  ["Pivot", "#pivot"],
   ["Impact", "#impact"],
   ["Journey", "#journey"],
+  ["Work", "#work"],
   ["Education", "#education"],
   ["Story", "#story"],
 ];
@@ -40,8 +42,8 @@ export function SiteHeader() {
             {label}
           </a>
         ))}
-        <a className="nav-cta" href="mailto:rahimi.mosa@gmail.com">
-          Start a conversation
+        <a className="nav-cta" href="#work">
+          Examine my work
         </a>
       </nav>
 

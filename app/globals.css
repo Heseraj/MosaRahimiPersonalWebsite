@@ -162,6 +162,7 @@ button:focus-visible {
 }
 
 .hero {
+  column-gap: clamp(20px, 3vw, 48px);
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(380px, 0.88fr);
   min-height: 100svh;
@@ -185,8 +186,10 @@ button:focus-visible {
 .hero-copy {
   align-self: center;
   max-width: 790px;
+  min-width: 0;
   padding-right: clamp(28px, 5vw, 88px);
   position: relative;
+  width: 100%;
   z-index: 1;
 }
 
@@ -223,19 +226,25 @@ button:focus-visible {
 
 .hero h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(62px, 7.3vw, 116px);
+  font-size: clamp(46px, 4.8vw, 82px);
   font-weight: 400;
   letter-spacing: -0.065em;
-  line-height: 0.88;
+  line-height: 0.94;
   margin: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 .hero h1 span {
   color: var(--blue);
   display: block;
   font-style: italic;
-  margin-left: clamp(22px, 5vw, 80px);
-  white-space: nowrap;
+  margin-left: clamp(12px, 2vw, 32px);
+  max-width: calc(100% - clamp(12px, 2vw, 32px));
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  white-space: normal;
 }
 
 .hero-intro {
@@ -246,10 +255,28 @@ button:focus-visible {
   max-width: 650px;
 }
 
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 28px;
+}
+
+.hero-tags span {
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 11px 14px;
+  text-transform: uppercase;
+}
+
 .hero-actions {
   align-items: center;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 18px 30px;
   margin-top: 38px;
 }
 
@@ -298,6 +325,17 @@ button:focus-visible {
 
 .button-primary:hover {
   background: var(--blue);
+}
+
+.button-secondary {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--navy);
+}
+
+.button-secondary:hover {
+  background: var(--paper-deep);
+  border-color: var(--navy);
 }
 
 .text-link {
@@ -472,6 +510,14 @@ button:focus-visible {
   margin: 0;
 }
 
+.work-section h2 span,
+.contact-inner h2 span {
+  color: var(--blue);
+  display: block;
+  font-style: italic;
+  margin-left: clamp(18px, 4vw, 60px);
+}
+
 .split-heading {
   align-items: end;
   display: grid;
@@ -545,8 +591,9 @@ button:focus-visible {
   align-items: center;
   background: var(--navy);
   color: white;
+  column-gap: clamp(24px, 3vw, 52px);
   display: grid;
-  grid-template-columns: 0.45fr 1fr 0.2fr;
+  grid-template-columns: minmax(160px, 0.45fr) minmax(0, 1fr) minmax(80px, 0.2fr);
   min-height: 680px;
   overflow: hidden;
   padding: 100px max(6vw, calc((100vw - var(--max)) / 2));
@@ -566,13 +613,15 @@ button:focus-visible {
 
 .pivot-orbit {
   align-items: center;
+  aspect-ratio: 1;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   display: flex;
-  height: 210px;
+  height: auto;
   justify-content: center;
+  max-width: 210px;
   position: relative;
-  width: 210px;
+  width: 100%;
 }
 
 .pivot-orbit::after {
@@ -598,24 +647,32 @@ button:focus-visible {
 }
 
 .pivot-copy {
-  max-width: 760px;
+  max-width: min(760px, 100%);
+  min-width: 0;
   position: relative;
+  width: 100%;
   z-index: 2;
 }
 
 .pivot-copy h2 {
   font-family: Georgia, serif;
-  font-size: clamp(42px, 5vw, 70px);
+  font-size: clamp(40px, 4.5vw, 70px);
   font-weight: 400;
+  hyphens: auto;
   letter-spacing: -0.045em;
   line-height: 1.04;
   margin: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 .pivot-copy h2 span {
   color: var(--amber);
   display: block;
   font-style: italic;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .pivot-copy > p {
@@ -643,9 +700,11 @@ button:focus-visible {
 
 .pivot-icon {
   color: rgba(255, 255, 255, 0.08);
-  height: 190px;
+  height: auto;
+  max-width: 190px;
+  min-width: 0;
   transform: rotate(12deg);
-  width: 190px;
+  width: 100%;
 }
 
 .journey-heading h2 span {
@@ -878,37 +937,76 @@ button:focus-visible {
   margin: 0;
 }
 
-.credential-bar {
-  align-items: start;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+.artifact-grid {
   display: grid;
-  gap: 40px;
-  grid-template-columns: 0.35fr 1fr;
-  margin-top: 65px;
-  padding-top: 28px;
+  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 74px;
 }
 
-.credential-bar > span {
-  color: var(--amber);
-  font-size: 10px;
+.artifact-card {
+  border: 1px solid var(--line);
+  margin: -1px 0 0 -1px;
+}
+
+.artifact-card a {
+  color: inherit;
+  display: block;
+  min-height: 260px;
+  padding: 34px 34px 30px;
+  transition: background 180ms ease;
+}
+
+.artifact-card a:hover {
+  background: var(--paper-deep);
+}
+
+.artifact-label {
+  color: var(--ink-soft);
+  display: block;
+  font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.14em;
+  margin-bottom: 22px;
   text-transform: uppercase;
 }
 
-.credential-bar > div {
-  column-gap: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.artifact-card h3 {
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0;
 }
 
-.credential-bar p {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.65);
+.artifact-card p {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 18px 0 0;
+  max-width: 42ch;
+}
+
+.artifact-link {
+  align-items: center;
+  display: inline-flex;
   font-size: 11px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0 0 10px;
+  font-weight: 800;
+  gap: 6px;
+  letter-spacing: 0.08em;
+  margin-top: 28px;
+  text-transform: uppercase;
+}
+
+.artifact-link svg {
+  height: 15px;
+  transition: transform 180ms ease;
+  width: 15px;
+}
+
+.artifact-card a:hover .artifact-link svg {
+  transform: translate(3px, -3px);
 }
 
 .story-quote {
@@ -1695,6 +1793,11 @@ button:focus-visible {
   font-size: clamp(52px, 7vw, 94px);
 }
 
+.contact-inner h2 span {
+  color: rgba(255, 255, 255, 0.82);
+  margin-left: clamp(18px, 4vw, 72px);
+}
+
 .contact-inner > p {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.7;
@@ -1722,6 +1825,14 @@ button:focus-visible {
 .button-ghost:hover {
   background: white;
   color: var(--blue);
+}
+
+.contact-linkedin {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.contact-linkedin:hover {
+  color: white;
 }
 
 .contact-arrow {
@@ -1793,7 +1904,7 @@ footer > a:last-child svg {
   }
 
   .hero h1 {
-    font-size: clamp(56px, 8vw, 84px);
+    font-size: clamp(44px, 5.6vw, 58px);
   }
 
   .portrait-accent {
@@ -1806,8 +1917,8 @@ footer > a:last-child svg {
   }
 
   .pivot-section {
-    gap: 40px;
-    grid-template-columns: 0.32fr 1fr;
+    gap: clamp(24px, 4vw, 40px);
+    grid-template-columns: minmax(130px, 0.32fr) minmax(0, 1fr);
   }
 
   .pivot-icon {
@@ -1888,6 +1999,8 @@ footer > a:last-child svg {
 
   .hero h1 span {
     margin: 7px 0 0 22px;
+    max-width: calc(100% - 22px);
+    white-space: normal;
   }
 
   .hero-intro {
@@ -2020,15 +2133,6 @@ footer > a:last-child svg {
 
   .education-grid {
     margin-top: 55px;
-  }
-
-  .credential-bar,
-  .credential-bar > div {
-    grid-template-columns: 1fr;
-  }
-
-  .credential-bar > div {
-    gap: 12px;
   }
 
   .story-quote {
@@ -2237,6 +2341,16 @@ footer > a:last-child svg {
   .global-row {
     align-items: flex-start;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .artifact-grid {
+    grid-template-columns: 1fr;
+    margin-top: 55px;
+  }
+
+  .artifact-card a {
+    min-height: auto;
+    padding: 28px 24px;
   }
 
   .contact-section {

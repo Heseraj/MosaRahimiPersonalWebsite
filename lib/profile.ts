@@ -8,6 +8,13 @@ export type CareerEntry = {
   tone?: "current" | "education" | "service";
 };
 
+export type Artifact = {
+  title: string;
+  description: string;
+  href: string;
+  label: string;
+};
+
 export const impact = [
   { value: "364K", label: "units stowed", note: "A non-peak Amazon record" },
   { value: "70+", label: "programs coordinated", note: "Across all 34 Afghan provinces" },
@@ -17,12 +24,12 @@ export const impact = [
 
 export const career: CareerEntry[] = [
   {
-    period: "2025 — Present",
-    organization: "Amazon",
-    role: "AMZ Leo Decks — Coordination Supervisor",
+    period: "June 2025 — Present",
+    organization: "Amazon Leo (Project Kuiper)",
+    role: "Coordination Supervisor",
     location: "Redmond, Washington",
     summary:
-      "Coordinating production at the frontier of advanced manufacturing, translating complex systems into dependable human-scale execution.",
+      "Coordinating production for Amazon Leo (Project Kuiper)—building the manufacturing systems behind the satellite constellation and translating complex aerospace operations into dependable human-scale execution.",
     tone: "current",
   },
   {
@@ -42,10 +49,14 @@ export const career: CareerEntry[] = [
   {
     period: "2019 — 2025",
     organization: "Dastranj",
-    role: "Founder",
+    role: "Founder & CEO",
     location: "Philadelphia, Pennsylvania",
     summary:
-      "A learning venture at the intersection of business and technology, grounded in a long-held ambition to apply AI, machine learning, and computer vision to consequential problems.",
+      "A startup with a long-term thesis: apply AI, machine learning, and computer vision to the artisan goods market—building the supply chain, brand, and operating systems to connect craft producers with global demand.",
+    highlights: [
+      "Built an end-to-end supply chain from producer relationships through fulfillment.",
+      "Company mission centers on scaling artisan goods through technology—not reinvention, but a deliberate bet on AI in a category that still runs on trust and handwork.",
+    ],
   },
   {
     period: "2021 — 2022",
@@ -146,10 +157,33 @@ export const education = [
   },
 ];
 
-export const credentials = [
-  "What is Data Science?",
-  "Creating Interactive Presentations with Shiny and R",
-  "Advance Your Skills as an R Expert",
-  "Programming Foundations: Fundamentals",
-  "Business Analytics: Data Reduction with Excel and R",
+export const artifacts: Artifact[] = [
+  {
+    title: "BuildingANN",
+    description:
+      "Jupyter notebook building neural network fundamentals from scratch—part of a deliberate move from operations into machine learning.",
+    href: "https://github.com/Heseraj/BuildingANN",
+    label: "Notebook · GitHub",
+  },
+  {
+    title: "FinRiskManagement",
+    description:
+      "R-based financial risk modeling—connecting Wharton analytics training to code you can inspect and run.",
+    href: "https://github.com/Heseraj/FinRiskManagement",
+    label: "Code · GitHub",
+  },
+  {
+    title: "AI at work — the jagged frontier",
+    description:
+      "Published analysis on how AI reshapes organizations, drawing on Harvard D³ research and Lakhani et al.",
+    href: "https://www.linkedin.com/posts/mosa-rahimi_back-to-the-beginnings-of-ai-at-work-harvard-activity-7454690983734083584-GQFV",
+    label: "Analysis · LinkedIn",
+  },
+  {
+    title: "GitHub profile",
+    description:
+      "The full set of notebooks, repos, and ongoing technical work—start here if you want to evaluate how I build.",
+    href: "https://github.com/Heseraj",
+    label: "All projects",
+  },
 ];

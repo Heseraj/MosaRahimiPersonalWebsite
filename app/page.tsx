@@ -4,6 +4,7 @@ import {
   ArrowUpRight,
   BrainCircuit,
   ChevronRight,
+  Code2,
   Globe2,
   Mail,
   MoveUpRight,
@@ -22,7 +23,7 @@ import whartonAfter from "../Wharton After Graduatioin Ceremoney.jpeg";
 import whartonStage from "../WhartonMBA_H3_0354.jpg";
 import { Reveal } from "@/components/reveal";
 import { SiteHeader } from "@/components/site-header";
-import { career, credentials, education, impact } from "@/lib/profile";
+import { artifacts, career, education, impact } from "@/lib/profile";
 
 export default function Home() {
   return (
@@ -34,19 +35,31 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow hero-kicker">
             <span className="status-dot" />
-            Operator · Strategist · Builder
+            The deliberate pivot · AI &amp; data science
           </p>
           <h1 id="hero-heading">
-            Complex systems.
-            <span>Human outcomes.</span>
+            Experience taught me how systems behave.
+            <span>Now I&apos;m learning how machines learn.</span>
           </h1>
           <p className="hero-intro">
-            I&apos;m Mosa Rahimi—a Wharton MBA, Harvard MPA, and Amazon leader
-            with two decades spent turning complexity into coordinated action.
+            I&apos;m Mosa Rahimi—a Wharton MBA, Harvard MPA, and Amazon Leo
+            leader.
+            After two decades in operations, policy, and strategy, I&apos;m
+            deliberately building at the intersection of artificial intelligence,
+            finance, and the consequential problems those systems create.
           </p>
+          <div className="hero-tags" aria-label="Areas of focus">
+            <span>Artificial intelligence</span>
+            <span>Deep learning</span>
+            <span>Economic modeling</span>
+            <span>Data science</span>
+          </div>
           <div className="hero-actions">
-            <a className="button button-primary" href="#journey">
-              Explore my journey <ArrowDownRight aria-hidden="true" />
+            <a className="button button-primary" href="#pivot">
+              Why this pivot <ArrowDownRight aria-hidden="true" />
+            </a>
+            <a className="button button-secondary" href="#journey">
+              Explore my journey
             </a>
             <a
               className="text-link"
@@ -59,7 +72,10 @@ export default function Home() {
           </div>
           <div className="hero-note">
             <span>20+</span>
-            <p>years across public service, policy, technology, and operations</p>
+            <p>
+              years across public service, policy, technology, and operations—now
+              applied to AI
+            </p>
           </div>
         </div>
 
@@ -78,24 +94,24 @@ export default function Home() {
             />
             <div className="portrait-caption">
               <span>Based in the United States</span>
-              <span>Working at global scale</span>
+              <span>Amazon Leo · Project Kuiper</span>
             </div>
           </div>
           <div className="portrait-accent" aria-hidden="true">
-            <span>Ideas</span>
+            <span>Systems</span>
             <span>into</span>
-            <strong>motion.</strong>
+            <strong>intelligence.</strong>
           </div>
         </div>
       </section>
 
       <section className="signal-strip" aria-label="Career themes">
         <div className="signal-track">
+          <span>AI &amp; Data</span>
+          <i />
           <span>Operations Leadership</span>
           <i />
           <span>Strategic Systems</span>
-          <i />
-          <span>AI & Data</span>
           <i />
           <span>Public Service</span>
           <i />
@@ -128,27 +144,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pivot-section" aria-labelledby="pivot-heading">
+      <section className="pivot-section" id="pivot" aria-labelledby="pivot-heading">
         <div className="pivot-orbit" aria-hidden="true">
           <span>AI</span>
         </div>
         <Reveal className="pivot-copy">
-          <p className="eyebrow light">The deliberate pivot</p>
+          <p className="eyebrow light">Why this pivot</p>
           <h2 id="pivot-heading">
-            Experience has taught me how systems behave.
-            <span>Now I&apos;m learning how machines learn.</span>
+            Not reinvention for its own sake.
+            <span>A deliberate expansion of how I solve.</span>
           </h2>
           <p>
-            My next chapter sits at the intersection of artificial intelligence,
-            finance, strategy, operations, and data science. Not reinvention for
-            its own sake—a deliberate expansion of the technical language I use
-            to solve consequential problems.
+            Operations taught me how large systems coordinate under pressure.
+            Policy taught me how institutions shape outcomes. Strategy taught me
+            where leverage actually lives. AI adds a new technical language—and
+            a new set of consequential problems—at the intersection of finance,
+            governance, and human-scale impact.
           </p>
-          <div className="pivot-tags" aria-label="Areas of focus">
-            <span>Artificial intelligence</span>
-            <span>Deep learning</span>
-            <span>Economic modeling</span>
-            <span>Data science</span>
+          <div className="pivot-tags" aria-label="What I'm building toward">
+            <span>Machine learning</span>
+            <span>AI policy</span>
+            <span>Applied data science</span>
+            <span>Systems thinking</span>
           </div>
         </Reveal>
         <BrainCircuit className="pivot-icon" aria-hidden="true" />
@@ -216,14 +233,6 @@ export default function Home() {
             </Reveal>
           ))}
         </div>
-        <Reveal className="credential-bar">
-          <span>Continuous learning</span>
-          <div>
-            {credentials.map((credential) => (
-              <p key={credential}>{credential}</p>
-            ))}
-          </div>
-        </Reveal>
       </section>
 
       <section className="section story-section" id="story" aria-labelledby="story-heading">
@@ -520,27 +529,73 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section className="contact-section" aria-labelledby="contact-heading">
+      <section className="section work-section" id="work" aria-labelledby="work-heading">
+        <Reveal className="section-heading split-heading">
+          <div>
+            <p className="eyebrow">Technical work</p>
+            <h2 id="work-heading">
+              Something to examine.
+              <span>Not just a résumé.</span>
+            </h2>
+          </div>
+          <p>
+            AI companies, policy organizations, and technical recruiters need
+            artifacts—not adjectives. Here is code, analysis, and work you can
+            inspect before we talk.
+          </p>
+        </Reveal>
+
+        <div className="artifact-grid">
+          {artifacts.map((artifact, index) => (
+            <Reveal key={artifact.href} className="artifact-card" delay={index * 70}>
+              <a href={artifact.href} target="_blank" rel="noreferrer">
+                <span className="artifact-label">{artifact.label}</span>
+                <h3>{artifact.title}</h3>
+                <p>{artifact.description}</p>
+                <span className="artifact-link">
+                  Open <ArrowUpRight aria-hidden="true" />
+                </span>
+              </a>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="contact-section" id="contact" aria-labelledby="contact-heading">
         <div className="contact-grid" aria-hidden="true" />
         <Reveal className="contact-inner">
-          <p className="eyebrow light">The next chapter</p>
-          <h2 id="contact-heading">Let&apos;s turn complexity into forward motion.</h2>
+          <p className="eyebrow light">For AI teams &amp; technical recruiters</p>
+          <h2 id="contact-heading">
+            Examine the work.
+            <span>Then let&apos;s talk.</span>
+          </h2>
           <p>
-            I&apos;m always interested in thoughtful conversations about AI,
-            operations, strategy, and consequential work.
+            I&apos;m looking for roles and collaborations at the intersection of
+            artificial intelligence, operations, and policy. Start with the
+            artifacts above—or reach out directly if you see a fit.
           </p>
           <div className="contact-actions">
-            <a className="button button-light" href="mailto:rahimi.mosa@gmail.com">
-              <Mail aria-hidden="true" /> Start a conversation
+            <a
+              className="button button-light"
+              href="https://github.com/Heseraj"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Code2 aria-hidden="true" /> View GitHub
+            </a>
+            <a className="button button-ghost" href="#work">
+              See technical work
+            </a>
+            <a className="button button-ghost" href="mailto:rahimi.mosa@gmail.com">
+              <Mail aria-hidden="true" /> Email me
             </a>
             <a
-              className="button button-ghost"
+              className="text-link contact-linkedin"
               href="https://www.linkedin.com/in/mosa-rahimi"
               target="_blank"
               rel="noreferrer"
             >
-              <span className="linkedin-glyph" aria-hidden="true">in</span>
-              Connect on LinkedIn
+              LinkedIn <ArrowUpRight aria-hidden="true" />
             </a>
           </div>
         </Reveal>
@@ -552,7 +607,7 @@ export default function Home() {
           <span className="brand-mark">MR</span>
           <span className="brand-name">Mosa Rahimi</span>
         </a>
-        <p>Operator · Strategist · Builder</p>
+        <p>Operator · Strategist · Builder · AI</p>
         <a href="#top">
           Back to top <ArrowUpRight aria-hidden="true" />
         </a>

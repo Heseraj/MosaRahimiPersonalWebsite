@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Mosa Rahimi — Complex systems. Human outcomes.";
+export const alt = "Mosa Rahimi — Now I'm learning how machines learn.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -66,9 +66,6 @@ export default function OpenGraphImage() {
             </span>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ fontFamily: "serif", fontSize: 84, letterSpacing: -5 }}>
-              Complex systems.
-            </span>
             <span
               style={{
                 color: "#2878ff",
@@ -76,11 +73,19 @@ export default function OpenGraphImage() {
                 fontSize: 84,
                 fontStyle: "italic",
                 letterSpacing: -5,
-                marginLeft: 80,
+              }}
+            >
+              Now I&apos;m learning
+            </span>
+            <span
+              style={{
+                fontFamily: "serif",
+                fontSize: 84,
+                letterSpacing: -5,
                 marginTop: -8,
               }}
             >
-              Human outcomes.
+              how machines learn.
             </span>
           </div>
           <div
@@ -95,7 +100,7 @@ export default function OpenGraphImage() {
               textTransform: "uppercase",
             }}
           >
-            <span>Operator · Strategist · Builder</span>
+            <span>The deliberate pivot · AI &amp; data science</span>
             <span>Wharton MBA · Harvard MPA · Amazon</span>
           </div>
         </div>
