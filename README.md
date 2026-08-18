@@ -11,6 +11,15 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+The Digital Twin uses OpenRouter from a server-only route. Add this to `.env`:
+
+```bash
+OPEN_ROUTER_API_KEY=your_openrouter_key
+```
+
+The model is locked to `openai/gpt-oss-20b`; the key is never exposed to the
+browser.
+
 For a production check:
 
 ```bash

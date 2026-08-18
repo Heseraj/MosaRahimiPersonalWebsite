@@ -42,8 +42,8 @@ export function SiteHeader() {
             {label}
           </a>
         ))}
-        <a className="nav-cta" href="#work">
-          Examine my work
+        <a className="nav-cta" href="#digital-twin" onClick={() => setOpen(false)}>
+          Ask my AI twin
         </a>
       </nav>
 

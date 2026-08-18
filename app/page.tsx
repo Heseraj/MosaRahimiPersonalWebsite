@@ -23,8 +23,10 @@ import missionSouth from "../Mission to the south.jpg";
 import tractor from "../Tractor1.jpg";
 import whartonAfter from "../Wharton After Graduatioin Ceremoney.jpeg";
 import whartonStage from "../WhartonMBA_H3_0354.jpg";
+import { DigitalTwinChat } from "@/components/digital-twin-chat";
 import { Reveal } from "@/components/reveal";
 import { SiteHeader } from "@/components/site-header";
+import { hazaraSources } from "@/lib/digital-twin-knowledge";
 import { artifacts, career, education, impact } from "@/lib/profile";
 
 export default function Home() {
@@ -663,6 +665,52 @@ export default function Home() {
               </a>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      <section
+        className="digital-twin-section"
+        id="digital-twin"
+        aria-labelledby="digital-twin-heading"
+      >
+        <div className="digital-twin-inner">
+          <Reveal className="digital-twin-intro">
+            <p className="eyebrow light">Ask the Digital Twin</p>
+            <h2 id="digital-twin-heading">
+              A career you can question.
+              <span>A history worth understanding.</span>
+            </h2>
+            <p>
+              Explore Mosa&apos;s path from refugee childhood and Afghan public
+              service to Wharton, Harvard, Amazon Leo, and an intentional move
+              into AI. You can also ask about Hazara history, identity, culture,
+              and the challenges facing the community.
+            </p>
+            <div className="twin-trust-note">
+              <span>Grounded, not improvised</span>
+              <p>
+                Career answers use Mosa&apos;s documented public profile. Hazara
+                answers are instructed to distinguish lived experience from
+                sourced history and include citations.
+              </p>
+            </div>
+            <details className="twin-sources">
+              <summary>View Hazara knowledge sources</summary>
+              <ol>
+                {hazaraSources.map((source) => (
+                  <li key={source.id}>
+                    <a href={source.url} target="_blank" rel="noreferrer">
+                      {source.title}
+                      <ArrowUpRight aria-hidden="true" />
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </details>
+          </Reveal>
+          <Reveal className="digital-twin-chat-wrap" delay={120}>
+            <DigitalTwinChat />
+          </Reveal>
         </div>
       </section>
 
