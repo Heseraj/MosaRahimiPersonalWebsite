@@ -9,6 +9,7 @@ import {
   UserRound,
 } from "lucide-react";
 import {
+  Fragment,
   type FormEvent,
   type ReactNode,
   useEffect,
@@ -36,12 +37,30 @@ const suggestions = [
   "What shaped Mosa’s leadership style?",
 ];
 
+function emphasize(text: string, keyPrefix: string): ReactNode[] {
+  return text.split(/(\*\*[^*\n]+\*\*)/g).map((segment, index) =>
+    segment.length > 4 &&
+    segment.startsWith("**") &&
+    segment.endsWith("**") ? (
+      <strong key={`${keyPrefix}-strong-${index}`}>
+        {segment.slice(2, -2)}
+      </strong>
+    ) : (
+      segment
+    ),
+  );
+}
+
 function linkify(text: string): ReactNode[] {
   const parts = text.split(/(https?:\/\/[^\s]+)/g);
 
   return parts.map((part, index) => {
     if (!part.startsWith("http://") && !part.startsWith("https://")) {
-      return part;
+      return (
+        <Fragment key={`text-${index}`}>
+          {emphasize(part, String(index))}
+        </Fragment>
+      );
     }
 
     const trailing = part.match(/[),.;]+$/)?.[0] ?? "";
