@@ -11,6 +11,7 @@ import {
   Newspaper,
 } from "lucide-react";
 import auafGraduation from "../AUAF Graduation Day .jpeg";
+import dad from "../dad.jpeg";
 import dustAndGrease from "../Dugst and greese on my clothes.jpg";
 import familyAfterGrandma from "../Family After Grandma.jpg";
 import fullFamilyIran from "../Full Family Iran.jpg";
@@ -306,9 +307,52 @@ export default function Home() {
             was family—the first system of resilience, responsibility, and hope.
           </p>
         </div>
+        <div className="father-story" aria-labelledby="father-story-heading">
+          <Reveal className="father-photo">
+            <figure>
+              <Image
+                src={dad}
+                alt="Mosa Rahimi's father standing outside the family home"
+                placeholder="blur"
+                sizes="(max-width: 760px) 100vw, 52vw"
+              />
+              <figcaption>
+                <span>The man who made the dream possible</span>
+                <small>A refugee farmer · A father who chose school</small>
+              </figcaption>
+            </figure>
+          </Reveal>
+          <Reveal className="father-story-copy" delay={100}>
+            <p className="eyebrow">Story 02 · The first opportunity</p>
+            <h3 id="father-story-heading">
+              Before I had a dream,
+              <span>my father made room for one.</span>
+            </h3>
+            <p>
+              Many refugee children around me left school during middle school
+              to help their families survive. My father was a refugee farmer,
+              and sons were expected to help win bread. He refused to let that
+              expectation end our education. He sent me to school.
+            </p>
+            <p>
+              I had no dream without his decision. Because he protected my
+              chance to learn, I finished high school. Everything that
+              followed—AUAF, Wharton, and Harvard—started with his sacrifice.
+            </p>
+            <blockquote>Everything I have is because of this man.</blockquote>
+            <a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:6716052609112829952/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Read the original tribute <ArrowUpRight aria-hidden="true" />
+            </a>
+          </Reveal>
+          <span className="father-story-mark" aria-hidden="true">01</span>
+        </div>
         <div className="work-story" aria-labelledby="work-story-heading">
           <Reveal className="work-story-copy">
-            <p className="eyebrow light">Story 02 · The impossible dream</p>
+            <p className="eyebrow light">Story 03 · The impossible dream</p>
             <h3 id="work-story-heading">
               College was not in the cards.
               <span>I refused to stop dreaming.</span>
@@ -361,7 +405,7 @@ export default function Home() {
               <span>years</span>
             </div>
             <div>
-              <p className="eyebrow">Story 03 · Service under fire</p>
+              <p className="eyebrow">Story 04 · Service under fire</p>
               <h3 id="mission-story-heading">
                 I put my life on the line.
                 <span>The dream was bigger than the danger.</span>
@@ -423,7 +467,7 @@ export default function Home() {
         </div>
         <div className="education-story" aria-labelledby="education-story-heading">
           <Reveal className="education-story-heading">
-            <p className="eyebrow light">Story 04 · The long road to the classroom</p>
+            <p className="eyebrow light">Story 05 · The long road to the classroom</p>
             <h3 id="education-story-heading">
               In 1999, college was impossible.
               <span>In 2022, I graduated from Wharton and Harvard.</span>
