@@ -8,6 +8,7 @@ import {
   Globe2,
   Mail,
   MoveUpRight,
+  Newspaper,
 } from "lucide-react";
 import auafGraduation from "../AUAF Graduation Day .jpeg";
 import dustAndGrease from "../Dugst and greese on my clothes.jpg";
@@ -526,6 +527,66 @@ export default function Home() {
           <p>
             Pashto <small>Professional working</small>
           </p>
+        </Reveal>
+        <Reveal className="press-feature">
+          <div className="press-heading">
+            <div>
+              <p className="eyebrow">Featured coverage</p>
+              <h3>
+                The story,
+                <span>on record.</span>
+              </h3>
+            </div>
+            <p>
+              NBC10 Philadelphia documented two defining moments: fighting to
+              bring family to safety and, after escaping the Taliban, choosing
+              to step forward publicly.
+            </p>
+          </div>
+          <div className="press-grid">
+            <a
+              className="press-card"
+              href="https://www.nbcphiladelphia.com/news/national-international/afghan-veteran-works-to-safely-get-his-family-out-of-afghanistan/2929885/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="press-source">
+                <Newspaper aria-hidden="true" />
+                NBC10 Philadelphia
+              </span>
+              <h4>
+                Afghan Veteran Works to Safely Get His Family Out of Afghanistan
+              </h4>
+              <p>
+                A report on the urgent effort to protect and evacuate family
+                members from Afghanistan.
+              </p>
+              <span className="press-link">
+                View report <ArrowUpRight aria-hidden="true" />
+              </span>
+            </a>
+            <a
+              className="press-card"
+              href="https://www.nbcphiladelphia.com/news/local/after-escaping-taliban-afghan-translator-ready-to-show-his-face/3339428/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="press-source">
+                <Newspaper aria-hidden="true" />
+                NBC10 Philadelphia
+              </span>
+              <h4>
+                After Escaping Taliban, Afghan Translator Ready to Show His Face
+              </h4>
+              <p>
+                A public turning point after escape—moving from necessary
+                anonymity to sharing the story openly.
+              </p>
+              <span className="press-link">
+                View report <ArrowUpRight aria-hidden="true" />
+              </span>
+            </a>
+          </div>
         </Reveal>
       </section>
 
