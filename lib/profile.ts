@@ -15,6 +15,195 @@ export type Artifact = {
   label: string;
 };
 
+export type TimelineEvent = {
+  org: string;
+  role: string;
+  /** Decimal-year start, e.g. 2019.33 for roughly May 2019. */
+  start: number;
+  /** Decimal-year end. */
+  end: number;
+  /**
+   * "work" and "education" render as ordinary dated bars. "throughline" is a
+   * single summary bar spanning the full axis, placed last, representing the
+   * continuous thread underneath every dated entry above it.
+   */
+  type: "work" | "education" | "throughline";
+  dateLabel: string;
+};
+
+export type OverlapBand = {
+  start: number;
+  end: number;
+  label: string;
+};
+
+/**
+ * Work history and formal schooling on one shared axis. Built from the same
+ * dates published in `career` and `education` below — the point isn't new
+ * information, it's making the overlap between full-time, high-stakes work
+ * and formal study visible at a glance instead of requiring a reader to
+ * cross-reference two separate sections themselves.
+ */
+export const overlapTimeline: TimelineEvent[] = [
+  {
+    org: "Iran",
+    role: "Refugee Farm Laborer · Tractor Driver — dreaming of a classroom that felt out of reach",
+    start: 1999.0,
+    end: 2003.0,
+    type: "work",
+    dateLabel: "1999–2003",
+  },
+  {
+    org: "Kabul National Police Academy",
+    role: "Police Sergeant training (non-degree, ~6–9 mo)",
+    start: 2003.0,
+    end: 2003.6,
+    type: "education",
+    dateLabel: "2003",
+  },
+  {
+    org: "Afghan Border Police",
+    role: "Aide-de-Camp · Chief of Staff",
+    start: 2004.0,
+    end: 2008.0,
+    type: "work",
+    dateLabel: "2004–2008",
+  },
+  {
+    org: "U.S. Army Central Command",
+    role: "Cultural Adviser & Interpreter",
+    start: 2008.0,
+    end: 2010.0,
+    type: "work",
+    dateLabel: "2008–2010",
+  },
+  {
+    org: "American University of Afghanistan",
+    role: "BBA, Finance",
+    start: 2009.0,
+    end: 2013.0,
+    type: "education",
+    dateLabel: "2009–2013",
+  },
+  {
+    org: "DOJ / ICITAP",
+    role: "Adviser & Senior Program Assistant",
+    start: 2010.0,
+    end: 2014.0,
+    type: "work",
+    dateLabel: "2010–2014",
+  },
+  {
+    org: "Multiple roles (New York)",
+    role: "Bank teller · Translator · Warehouse · Cashier",
+    start: 2015.0,
+    end: 2016.0,
+    type: "work",
+    dateLabel: "2015–2016",
+  },
+  {
+    org: "CyraCom",
+    role: "Farsi–Dari Interpreter",
+    start: 2016.0,
+    end: 2018.0,
+    type: "work",
+    dateLabel: "2016–2018",
+  },
+  {
+    org: "The Wharton School",
+    role: "MBA — Finance, Analytics, Management",
+    start: 2019.0,
+    end: 2022.0,
+    type: "education",
+    dateLabel: "2019–2022",
+  },
+  {
+    org: "Harvard Kennedy School",
+    role: "MPA — Public Leadership, Policy, Technology",
+    start: 2019.0,
+    end: 2022.0,
+    type: "education",
+    dateLabel: "2019–2022",
+  },
+  {
+    org: "Refugee Investment Network",
+    role: "Summer Intern",
+    start: 2019.33,
+    end: 2019.58,
+    type: "work",
+    dateLabel: "May–Jul 2019",
+  },
+  {
+    org: "Dastranj",
+    role: "Founder (paused for aerospace focus)",
+    start: 2019.0,
+    end: 2025.0,
+    type: "work",
+    dateLabel: "2019–2025",
+  },
+  {
+    org: "Team Afghan Power",
+    role: "Development & Outreach MBA Intern",
+    start: 2020.33,
+    end: 2021.58,
+    type: "work",
+    dateLabel: "May 2020–Aug 2021",
+  },
+  {
+    org: "Harvard Kennedy School",
+    role: "Belfer Young Leader Fellow · ML TA",
+    start: 2021.0,
+    end: 2022.0,
+    type: "work",
+    dateLabel: "2021–2022",
+  },
+  {
+    org: "IncQuery",
+    role: "Survey Director",
+    start: 2023.67,
+    end: 2024.25,
+    type: "work",
+    dateLabel: "Sep 2023–Mar 2024",
+  },
+  {
+    org: "Amazon (Philadelphia)",
+    role: "SSD DC Area Manager II",
+    start: 2024.0,
+    end: 2025.0,
+    type: "work",
+    dateLabel: "2024–2025",
+  },
+  {
+    org: "Amazon Leo · Project Kuiper",
+    role: "Production Supervisor",
+    start: 2025.33,
+    end: 2025.92,
+    type: "work",
+    dateLabel: "May–Dec 2025",
+  },
+  {
+    org: "Amazon Leo · Project Kuiper",
+    role: "Coordination Supervisor",
+    start: 2025.92,
+    end: 2026.64,
+    type: "work",
+    dateLabel: "Dec 2025–present",
+  },
+  {
+    org: "Continuous learning",
+    role: "1999 – present",
+    start: 1999.0,
+    end: 2026.64,
+    type: "throughline",
+    dateLabel: "Self-directed growth running underneath every chapter above",
+  },
+];
+
+export const overlapBands: OverlapBand[] = [
+  { start: 2008.0, end: 2014.0, label: "Working while earning the BBA" },
+  { start: 2019.0, end: 2022.0, label: "Working while earning the MBA / MPA" },
+];
+
 export const impact = [
   { value: "364K", label: "units stowed", note: "A non-peak inbound stow record" },
   { value: "70+", label: "programs coordinated", note: "Within a unit spanning 34 Afghan provinces" },

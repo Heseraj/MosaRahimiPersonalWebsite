@@ -23,6 +23,7 @@ import missionSouth from "../Mission to the south.jpg";
 import tractor from "../Tractor1.jpg";
 import whartonAfter from "../Wharton After Graduatioin Ceremoney.jpeg";
 import whartonStage from "../WhartonMBA_H3_0354.jpg";
+import { CareerOverlapTimeline } from "@/components/career-overlap-timeline";
 import { DigitalTwinChat } from "@/components/digital-twin-chat";
 import { Reveal } from "@/components/reveal";
 import { SiteHeader } from "@/components/site-header";
@@ -184,6 +185,17 @@ export default function Home() {
             One throughline.
             <span>Many arenas.</span>
           </h2>
+        </Reveal>
+
+        <Reveal className="overlap-timeline-wrap" delay={60}>
+          <p className="overlap-kicker">
+            In 1999, the workday started before sunrise on a tractor, in a field, with a classroom
+            still years out of reach. What follows isn&apos;t a résumé with gaps to explain—it&apos;s
+            twenty-six years of work and formal study placed on the same axis, showing exactly where
+            the two overlapped, and making one thing plain: the learning never actually stopped,
+            with or without a school attached to it.
+          </p>
+          <CareerOverlapTimeline />
         </Reveal>
 
         <div className="timeline">
