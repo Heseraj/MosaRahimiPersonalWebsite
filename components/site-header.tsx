@@ -4,8 +4,8 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  ["Pivot", "#pivot"],
   ["Impact", "#impact"],
+  ["Expansion", "#pivot"],
   ["Journey", "#journey"],
   ["Work", "#work"],
   ["Education", "#education"],

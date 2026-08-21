@@ -42,7 +42,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow hero-kicker">
             <span className="status-dot" />
-            The deliberate pivot · AI &amp; data science
+            Operations leadership · Aerospace manufacturing · Applied AI
           </p>
           <h1 id="hero-heading">
             I build and scale complex operations.
@@ -53,17 +53,18 @@ export default function Home() {
             leader.
             After two decades leading operations, policy, and strategy, I work
             at the intersection of aerospace production systems, operational
-            strategy, and applied AI.
+            strategy, and applied AI. AI and data science are how I sharpen
+            operational systems—not a departure from them.
           </p>
           <div className="hero-tags" aria-label="Areas of focus">
-            <span>Artificial intelligence</span>
-            <span>Deep learning</span>
-            <span>Economic modeling</span>
-            <span>Data science</span>
+            <span>Operations strategy</span>
+            <span>Aerospace manufacturing</span>
+            <span>Applied AI</span>
+            <span>Systems leadership</span>
           </div>
           <div className="hero-actions">
             <a className="button button-primary" href="#pivot">
-              Why this pivot <ArrowDownRight aria-hidden="true" />
+              Why this expansion <ArrowDownRight aria-hidden="true" />
             </a>
             <a className="button button-secondary" href="#journey">
               Explore my journey
@@ -114,15 +115,17 @@ export default function Home() {
 
       <section className="signal-strip" aria-label="Career themes">
         <div className="signal-track">
-          <span>AI &amp; Data</span>
-          <i />
           <span>Operations Leadership</span>
+          <i />
+          <span>Chief of Staff &amp; Executive Advisory</span>
           <i />
           <span>Strategic Systems</span>
           <i />
           <span>Public Service</span>
           <i />
           <span>Cross-Cultural Leadership</span>
+          <i />
+          <span>Applied AI &amp; Data</span>
         </div>
       </section>
 
@@ -156,7 +159,7 @@ export default function Home() {
           <span>AI</span>
         </div>
         <Reveal className="pivot-copy">
-          <p className="eyebrow light">Why this pivot</p>
+          <p className="eyebrow light">Why this expansion</p>
           <h2 id="pivot-heading">
             Not reinvention for its own sake.
             <span>A deliberate expansion of how I solve.</span>
@@ -166,13 +169,14 @@ export default function Home() {
             Policy taught me how institutions shape outcomes. Strategy taught me
             where leverage actually lives. AI adds a new technical language—and
             a new set of consequential problems—at the intersection of finance,
-            governance, and human-scale impact.
+            governance, and human-scale impact. None of this replaces operations
+            leadership. It sharpens it.
           </p>
           <div className="pivot-tags" aria-label="What I'm building toward">
-            <span>Machine learning</span>
-            <span>AI policy</span>
-            <span>Applied data science</span>
             <span>Systems thinking</span>
+            <span>Operations strategy</span>
+            <span>Applied data science</span>
+            <span>Machine learning</span>
           </div>
         </Reveal>
         <BrainCircuit className="pivot-icon" aria-hidden="true" />
@@ -226,6 +230,38 @@ export default function Home() {
                   </ul>
                 )}
               </article>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="section work-section" id="work" aria-labelledby="work-heading">
+        <Reveal className="section-heading split-heading">
+          <div>
+            <p className="eyebrow">Technical work</p>
+            <h2 id="work-heading">
+              Something to examine.
+              <span>Not just a résumé.</span>
+            </h2>
+          </div>
+          <p>
+            AI companies, policy organizations, and technical recruiters need
+            artifacts—not adjectives. Here is code, analysis, and work you can
+            inspect before we talk.
+          </p>
+        </Reveal>
+
+        <div className="artifact-grid">
+          {artifacts.map((artifact, index) => (
+            <Reveal key={artifact.href} className="artifact-card" delay={index * 70}>
+              <a href={artifact.href} target="_blank" rel="noreferrer">
+                <span className="artifact-label">{artifact.label}</span>
+                <h3>{artifact.title}</h3>
+                <p>{artifact.description}</p>
+                <span className="artifact-link">
+                  Open <ArrowUpRight aria-hidden="true" />
+                </span>
+              </a>
             </Reveal>
           ))}
         </div>
@@ -650,38 +686,6 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section className="section work-section" id="work" aria-labelledby="work-heading">
-        <Reveal className="section-heading split-heading">
-          <div>
-            <p className="eyebrow">Technical work</p>
-            <h2 id="work-heading">
-              Something to examine.
-              <span>Not just a résumé.</span>
-            </h2>
-          </div>
-          <p>
-            AI companies, policy organizations, and technical recruiters need
-            artifacts—not adjectives. Here is code, analysis, and work you can
-            inspect before we talk.
-          </p>
-        </Reveal>
-
-        <div className="artifact-grid">
-          {artifacts.map((artifact, index) => (
-            <Reveal key={artifact.href} className="artifact-card" delay={index * 70}>
-              <a href={artifact.href} target="_blank" rel="noreferrer">
-                <span className="artifact-label">{artifact.label}</span>
-                <h3>{artifact.title}</h3>
-                <p>{artifact.description}</p>
-                <span className="artifact-link">
-                  Open <ArrowUpRight aria-hidden="true" />
-                </span>
-              </a>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       {twinEnabled && (
         <section
           className="digital-twin-section"
@@ -696,10 +700,12 @@ export default function Home() {
                 <span>A history worth understanding.</span>
               </h2>
               <p>
-                Explore Mosa&apos;s path from refugee childhood and Afghan
-                public service to Wharton, Harvard, Amazon Leo, and an
-                intentional move into AI. You can also ask about Hazara history,
-                identity, culture, and the challenges facing the community.
+                An experiment in applied AI—the same curiosity I bring to
+                manufacturing systems. Explore Mosa&apos;s path from refugee
+                childhood and Afghan public service to Wharton, Harvard, Amazon
+                Leo, and a deliberate expansion into AI. You can also ask about
+                Hazara history, identity, culture, and the challenges facing the
+                community.
               </p>
               <div className="twin-trust-note">
                 <span>Grounded, not improvised</span>

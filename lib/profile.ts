@@ -218,11 +218,12 @@ export const career: CareerEntry[] = [
     role: "Coordination Supervisor",
     location: "Redmond, Washington",
     summary:
-      "Coordinate satellite-manufacturing execution across the OTAC and Decks & Panels value streams, aligning production, quality, engineering, and shift handoffs in a cleanroom aerospace environment.",
+      "Coordinate satellite-manufacturing execution across the OTAC and Decks & Panels value streams, aligning production, quality, safety, and engineering through shift handoffs in a cleanroom aerospace environment.",
     highlights: [
       "Built operational tracking tools for labor contribution, MES analytics, and handoff continuity that remain in use across shifts.",
       "Support production-readiness and NPI builds for satellite-constellation manufacturing.",
       "Establish a dependable operating cadence that translates complex production requirements into clear, human-scale execution.",
+      "Translate shift-level production data into leadership-ready reporting used in operating-cadence reviews.",
     ],
     tone: "current",
   },

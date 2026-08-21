@@ -2294,7 +2294,7 @@ button:focus-visible {
 }
 
 .education-story {
-  background: var(--blue);
+  background: var(--navy);
   color: white;
   margin-top: 120px;
   overflow: hidden;
@@ -2705,7 +2705,7 @@ button:focus-visible {
 }
 
 .contact-section {
-  background: var(--blue);
+  background: var(--navy);
   color: white;
   min-height: 650px;
   overflow: hidden;
