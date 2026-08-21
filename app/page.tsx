@@ -194,10 +194,9 @@ export default function Home() {
         <Reveal className="overlap-timeline-wrap" delay={60}>
           <p className="overlap-kicker">
             In 1999, the workday started before sunrise on a tractor, in a field, with a classroom
-            still years out of reach. What follows isn&apos;t a résumé with gaps to explain—it&apos;s
-            twenty-six years of work and formal study placed on the same axis, showing exactly where
-            the two overlapped, and making one thing plain: the learning never actually stopped,
-            with or without a school attached to it.
+            still years out of reach. What follows is twenty-six years of work and formal study
+            placed on the same axis—concurrent, not sequential—showing exactly where the two
+            overlapped: the learning never stopped, with or without a school attached to it.
           </p>
           <CareerOverlapTimeline />
         </Reveal>
@@ -389,7 +388,8 @@ export default function Home() {
             <p>
               I had no dream without his decision. Because he protected my
               chance to learn, I finished high school. Everything that
-              followed—AUAF, Wharton, and Harvard—started with his sacrifice.
+              followed—AUAF, Wharton, Harvard, and the systems and AI work
+              I do today—started with his sacrifice.
             </p>
             <blockquote>Everything I have is because of this man.</blockquote>
             <a
@@ -553,7 +553,7 @@ export default function Home() {
                   sizes="(max-width: 760px) 100vw, 42vw"
                 />
                 <figcaption>
-                  <span>AUAF</span>
+                  <span className="institution">AUAF</span>
                   <small>BBA · Finance · 2013</small>
                 </figcaption>
               </figure>
@@ -567,7 +567,7 @@ export default function Home() {
                   sizes="(max-width: 760px) 48vw, 28vw"
                 />
                 <figcaption>
-                  <span>Wharton</span>
+                  <span className="institution">Wharton</span>
                   <small>MBA · 2022</small>
                 </figcaption>
               </figure>
@@ -595,7 +595,7 @@ export default function Home() {
                   sizes="(max-width: 760px) 100vw, 30vw"
                 />
                 <figcaption>
-                  <span>Harvard Kennedy School</span>
+                  <span className="institution">Harvard Kennedy School</span>
                   <small>MPA · 2022</small>
                 </figcaption>
               </figure>

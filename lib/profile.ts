@@ -205,10 +205,10 @@ export const overlapBands: OverlapBand[] = [
 ];
 
 export const impact = [
-  { value: "364K", label: "units stowed", note: "A non-peak inbound stow record" },
+  { value: "364K", label: "units stowed", note: "A record inbound stow, 40%+ above daily target" },
   { value: "70+", label: "programs coordinated", note: "Within a unit spanning 34 Afghan provinces" },
   { value: "12K", label: "person border force", note: "Scaled from 5,000 personnel" },
-  { value: "40%+", label: "faster reporting", note: "Through operational systems design" },
+  { value: "40%+", label: "faster reporting", note: "Through reporting-workflow redesign across 34 provinces" },
 ];
 
 export const career: CareerEntry[] = [

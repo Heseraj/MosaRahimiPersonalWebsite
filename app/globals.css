@@ -2476,6 +2476,13 @@ button:focus-visible {
   font-style: italic;
 }
 
+.degree-photo figcaption span.institution {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.015em;
+}
+
 .degree-photo figcaption small {
   color: rgba(255, 255, 255, 0.58);
   font-size: 8px;
